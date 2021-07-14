@@ -229,7 +229,7 @@ section{
 }
 /*---------- media quaries
         ---------- */
-    /* mobile dvice */
+    /* mobile dvices */
         @media only screen and (max-width:688px){
             .container{
                 width: 100%;
@@ -247,7 +247,7 @@ section{
         width: 100%;
     }
     .banner, .blogs, .live-section{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .banner, .blog, .live-section{
         flex-direction: column;
