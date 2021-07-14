@@ -234,10 +234,10 @@ section{
             .container{
                 width: 100%;
             }
-            .banner, .blogs, .live-section{
+            .banner, .blogs, .live-section, .video{
                 grid-template-columns: repeat(1, 1fr);
             }
-            .banner, .blog, .live-section{
+            .banner, .blog, .live-section, .video{
                 flex-direction: column;
             }
         }  
@@ -246,10 +246,10 @@ section{
     .container{
         width: 100%;
     }
-    .banner, .blogs, .live-section{
+    .banner, .blogs, .live-section, .video{
         grid-template-columns: repeat(2, 1fr);
     }
-    .banner, .blog, .live-section{
+    .banner, .blog, .live-section, .video{
         flex-direction: column;
     }
  }
