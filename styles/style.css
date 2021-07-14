@@ -22,7 +22,7 @@ main{
 /* nav li:hover{
     background-color: rgb(16, 19, 230);
 } */
- nav li a{
+ /* nav li a{
     text-decoration: none;
     color: #black;
     font-size: 16px;
@@ -44,9 +44,11 @@ nav li:hover{
 nav > ul > li:hover > ul{
     display: block;
 
-}
+} */
 
-/* top sections */
+/* -----------------------
+        top sections 
+ ----------- ---------------*/
 section{
     display: flex;
 }
@@ -55,16 +57,18 @@ section{
     align-items: center;
     background-color: #2D25A0;
     width: 1349px;
-    height: 620px;
+    height: 622px;
 }
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 24px;
 }
-.half-width{
+.banner img:hover{
+    transform: scale(1.2);
+    /* width: 300px; */
 }
-.half-width img{
+.banner-image img{
     width: 556px;
     height: 438px;
 }
@@ -100,10 +104,6 @@ section{
 }
 .blog img{
     padding: 7%;
-}
-.blog .thumbnail{
-    /* padding-top: 8%;
-    padding-left: 5%; */
 }
 .blog .thumbnail img{
     width: 300px;
@@ -182,12 +182,22 @@ section{
     transform: scale(1.5) rotate(369deg);
    transition: transform 2s ease-in-out;    
 }
+/* video sections */
+.video{
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
 
 /* Footer styles */
 .logo{
     padding-bottom: 2%;
-    padding-right: 25%;
-    padding-left: 25%%;
+    padding-right: 20%;
+    padding-left: 5%;
 }
 .logo img{
     width: 484px;
@@ -227,8 +237,11 @@ section{
             .banner, .blogs, .live-section{
                 grid-template-columns: repeat(1, 1fr);
             }
-            .top-section, .half-width, .blog, .live-section{
+            .banner, .blog, .live-section{
                 flex-direction: column;
             }
         }  
-        
+ /* Tablet responsive        */
+ @media only screen and (min-width: 688px) and (max-width: 992px) {
+
+ }
