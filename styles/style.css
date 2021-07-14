@@ -243,5 +243,13 @@ section{
         }  
  /* Tablet responsive        */
  @media only screen and (min-width: 688px) and (max-width: 992px) {
-
+    .container{
+        width: 100%;
+    }
+    .banner, .blogs, .live-section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner, .blog, .live-section{
+        flex-direction: column;
+    }
  }
