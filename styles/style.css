@@ -26,14 +26,24 @@ main{
     text-decoration: none;
     color: #black;
     font-size: 16px;
+    width: 128px;
+    
+    
 }
-nav >ul{
+nav ul{
     display: flex;
-    /* background-color: blue; */
     padding-left: 10%;
+}
+nav li{
+    list-style: none;
+    padding: 0px 8px;
+}
+nav li:hover{
+    background-color: rgb(228, 226, 222);
 }
 nav > ul > li:hover > ul{
     display: block;
+
 }
 
 /* top sections */
@@ -148,6 +158,31 @@ section{
     width: 567px;
     height: 427px;
 }
+/* photo-album */
+.photo-album{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-bottom: 2%;
+}
+.photo-frame{
+    width: 300px;
+    height: 200px;
+    border: 2px solid rgb(16, 5, 175);
+    border-radius: 5px;
+    margin: 5px;
+    overflow: hidden;
+
+}
+.photo img{
+    width: 100%;
+    border-radius: 5px;
+}
+.photo-frame:hover .photo{
+    transform: scale(1.5) rotate(369deg);
+   transition: transform 2s ease-in-out;    
+}
+
 /* Footer styles */
 .logo{
     padding-bottom: 2%;
