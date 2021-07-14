@@ -1,29 +1,65 @@
-/* top sections */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+</style>
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0%;
 
 }
+main{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ /* top header sections */
+ nav li{
+    list-style: none;
+    margin-right: 20px;
+    /* pading: 0px 10px; */
+}
+/* nav li:hover{
+    background-color: rgb(16, 19, 230);
+} */
+ nav li a{
+    text-decoration: none;
+    color: #black;
+    font-size: 16px;
+}
+nav >ul{
+    display: flex;
+    /* background-color: blue; */
+    padding-left: 10%;
+}
+nav > ul > li:hover > ul{
+    display: block;
+}
+
+/* top sections */
 section{
     display: flex;
 }
 .container{
+    justify-content: center;
+    align-items: center;
     background-color: #2D25A0;
-    width: 1348px;
+    width: 1349px;
     height: 620px;
 }
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+}
 .half-width{
-    width: 50%;
-    padding-top: 8%;
-    padding-left: 6%;
 }
 .half-width img{
     width: 556px;
     height: 438px;
 }
 .top-section{
-    padding-left: 10%;
-    padding-top: 10%;
+    padding-left: 7%;
 }
 .section-title{
     color: white;
@@ -80,12 +116,16 @@ section{
 /* ------See live 
 -------------------------*/
 .live-container{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 55px;
     padding-top: 2%;
-    padding-bottom: 6%;
+    padding-bottom: 6%; 
 }
 .live-section{
-    padding-left: 7%;
-    padding-top: 10%;
+    padding-left: 18%;
 }
 .live-section-title{
     font-size: 48px;
@@ -101,7 +141,7 @@ section{
 .live-section-width{
     width: 50%;
     padding-top: 7%;
-    padding-right: 9%;
+    padding-right: 13%;
 
 }
 .live-section-width img{
@@ -112,7 +152,7 @@ section{
 .logo{
     padding-bottom: 2%;
     padding-right: 25%;
-    padding-left: 30%;
+    padding-left: 25%%;
 }
 .logo img{
     width: 484px;
@@ -131,7 +171,7 @@ section{
 }
 .logo-icon{
    padding-right: 25%;
-   padding-left: 45%;
+   padding-left: 35%;
    word-spacing: 17px;
    padding-bottom: 1%;
 
@@ -142,3 +182,18 @@ section{
     height: 31px; */
     font-size: 18px;
 }
+/*---------- media quaries
+        ---------- */
+    /* mobile dvice */
+        @media only screen and (max-width:688px){
+            .container{
+                width: 100%;
+            }
+            .banner, .blogs, .live-section{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .top-section, .half-width, .blog, .live-section{
+                flex-direction: column;
+            }
+        }  
+        
